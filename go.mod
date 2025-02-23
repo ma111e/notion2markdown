@@ -1,4 +1,4 @@
-module github.com/nisanthchunduru/notion2markdown
+module github.com/ma111e/notion2markdown
 
 go 1.22.2
 
