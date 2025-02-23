@@ -141,7 +141,7 @@ func QuoteToMarkdown(code notionapi.Quote) string {
 func ImageToMarkdown(image notionapi.Image) string {
 	var markdown string
 	if image.File != nil && image.File.URL != "" {
-		markdown = fmt.Sprintf("![Untitled](%s)", image.File.URL)
+		markdown = fmt.Sprintf("![%s](%s)", image.Caption[0].PlainText, image.File.URL)
 	}
 	return markdown
 }
